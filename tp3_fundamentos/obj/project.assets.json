@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marcio.dsouza\\source\\repos\\tp3_fundamentos\\tp3_fundamentos\\tp3_fundamentos.csproj",
+      "projectUniqueName": "C:\\Users\\marcio.dsouza\\source\\repos\\tp3FundamentosCsharp\\tp3_fundamentos\\tp3_fundamentos.csproj",
       "projectName": "tp3_fundamentos",
-      "projectPath": "C:\\Users\\marcio.dsouza\\source\\repos\\tp3_fundamentos\\tp3_fundamentos\\tp3_fundamentos.csproj",
+      "projectPath": "C:\\Users\\marcio.dsouza\\source\\repos\\tp3FundamentosCsharp\\tp3_fundamentos\\tp3_fundamentos.csproj",
       "packagesPath": "C:\\Users\\marcio.dsouza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marcio.dsouza\\source\\repos\\tp3_fundamentos\\tp3_fundamentos\\obj\\",
+      "outputPath": "C:\\Users\\marcio.dsouza\\source\\repos\\tp3FundamentosCsharp\\tp3_fundamentos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

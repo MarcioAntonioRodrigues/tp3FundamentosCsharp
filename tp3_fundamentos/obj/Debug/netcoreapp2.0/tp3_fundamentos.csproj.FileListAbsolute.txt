@@ -9,3 +9,14 @@ C:\Users\marcio.dsouza\source\repos\tp3_fundamentos\tp3_fundamentos\obj\Debug\ne
 C:\Users\marcio.dsouza\source\repos\tp3_fundamentos\tp3_fundamentos\obj\Debug\netcoreapp2.0\tp3_fundamentos.AssemblyInfo.cs
 C:\Users\marcio.dsouza\source\repos\tp3_fundamentos\tp3_fundamentos\obj\Debug\netcoreapp2.0\tp3_fundamentos.dll
 C:\Users\marcio.dsouza\source\repos\tp3_fundamentos\tp3_fundamentos\obj\Debug\netcoreapp2.0\tp3_fundamentos.pdb
+C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\tp3_fundamentos\bin\Debug\netcoreapp2.0\tp3_fundamentos.deps.json
+C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\tp3_fundamentos\bin\Debug\netcoreapp2.0\tp3_fundamentos.runtimeconfig.json
+C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\tp3_fundamentos\bin\Debug\netcoreapp2.0\tp3_fundamentos.runtimeconfig.dev.json
+C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\tp3_fundamentos\bin\Debug\netcoreapp2.0\tp3_fundamentos.dll
+C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\tp3_fundamentos\bin\Debug\netcoreapp2.0\tp3_fundamentos.pdb
+C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\tp3_fundamentos\obj\Debug\netcoreapp2.0\tp3_fundamentos.csprojAssemblyReference.cache
+C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\tp3_fundamentos\obj\Debug\netcoreapp2.0\tp3_fundamentos.csproj.CoreCompileInputs.cache
+C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\tp3_fundamentos\obj\Debug\netcoreapp2.0\tp3_fundamentos.AssemblyInfoInputs.cache
+C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\tp3_fundamentos\obj\Debug\netcoreapp2.0\tp3_fundamentos.AssemblyInfo.cs
+C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\tp3_fundamentos\obj\Debug\netcoreapp2.0\tp3_fundamentos.dll
+C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\tp3_fundamentos\obj\Debug\netcoreapp2.0\tp3_fundamentos.pdb
