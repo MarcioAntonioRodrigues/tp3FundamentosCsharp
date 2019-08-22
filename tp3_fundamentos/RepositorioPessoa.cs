@@ -30,6 +30,7 @@ namespace tp3_fundamentos
         public void addPessoa(List<Pessoa> listPessoa, Pessoa pessoa)
         {
             listPessoa.Add(pessoa);
+            writePessoa(pessoa);
         }
 
         public void list(List<Pessoa> PessoasList)

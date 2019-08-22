@@ -17,10 +17,7 @@ namespace tp3_fundamentos
 
             if (choice == "1")
             {
-                Console.WriteLine("Digite o nome, ou parte do nome da pessoa que deseja encontrar");
-                string pessoaNome = Console.ReadLine();
-                repo.getPessoa(ListPessoa, pessoaNome);
-                Console.ReadKey();
+                pesquisarPessoa(repo, ListPessoa);
             }
             if(choice == "2")
             {
@@ -60,6 +57,16 @@ namespace tp3_fundamentos
                           "\n1 - Pesquisar pessoas" +
                           "\n2 - Adicionar nova pessoa" +
                           "\n3 - sair");
+        }
+
+        public static void pesquisarPessoa(RepositorioPessoa repo, List<Pessoa> ListPessoa)
+        {
+            Console.WriteLine("Digite o nome, ou parte do nome da pessoa que deseja encontrar");
+            string pessoaNome = Console.ReadLine();
+            repo.getPessoa(ListPessoa, pessoaNome);
+            Console.ReadKey();
+            start();
+            return;
         }
 
     }
