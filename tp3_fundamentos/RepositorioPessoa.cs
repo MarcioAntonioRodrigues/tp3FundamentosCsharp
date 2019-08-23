@@ -12,7 +12,7 @@ namespace tp3_fundamentos
         {
             if(PessoasList.Count == 0)
             {
-                Console.WriteLine("Ninguém foi encontrado.");
+                Console.WriteLine("Ninguém foi encontrado.\n");
             }
             else
             {
@@ -21,17 +21,19 @@ namespace tp3_fundamentos
                     if(pessoa.Nome == nome)
                     {
                         writePessoa(pessoa);
+                        return;
                     }
                 }
-                Console.WriteLine("Ninguém foi encontrado.");
+                Console.WriteLine("Ninguém foi encontrado.\n");
             }
         }
 
-        public void addPessoa(List<Pessoa> listPessoa, Pessoa pessoa)
-        {
-            listPessoa.Add(pessoa);
-            writePessoa(pessoa);
-        }
+        //public void addPessoa(List<Pessoa> listPessoa, Pessoa pessoa)
+        //{
+        //    pessoa = new Pessoa();
+        //    listPessoa.Add(pessoa);
+        //    writePessoa(pessoa);
+        //}
 
         public void list(List<Pessoa> PessoasList)
         {

@@ -11,44 +11,7 @@ namespace tp3_fundamentos
             Pessoa pessoa = new Pessoa();
             RepositorioPessoa repo = new RepositorioPessoa();
 
-            start();
-
-            var choice = Console.ReadLine();
-
-            if (choice == "1")
-            {
-                pesquisarPessoa(repo, ListPessoa);
-            }
-            if(choice == "2")
-            {
-                Console.WriteLine("Digite o nome da pessoa que deseja adicionar");
-                pessoa.Nome = Console.ReadLine();
-                Console.WriteLine("Digite o sobrenome da pessoa que deseja adicionar");
-                pessoa.Sobrenome = Console.ReadLine();
-                Console.WriteLine("Digite a data do aniversário no formato dd/MM/yyyy");
-                pessoa.Data = Console.ReadLine();
-                repo.addPessoa(ListPessoa, pessoa);
-                start();
-                Console.ReadKey();
-            }
-
-
-
-            //Console.WriteLine("Digite seu nome");
-            //pessoa.Nome = Console.ReadLine();
-
-            //Console.WriteLine("Digite seu sobrenome");
-            //pessoa.Sobrenome = Console.ReadLine();
-
-            //Console.WriteLine("Digite sua data de aniversário");
-            //pessoa.Data = Console.ReadLine();
-
-
-
-            //repo.list(ListPessoa);
-
-            //Console.ReadKey();
-
+            action(pessoa, repo, ListPessoa);
         }
         public static void start()
         {
@@ -65,9 +28,42 @@ namespace tp3_fundamentos
             string pessoaNome = Console.ReadLine();
             repo.getPessoa(ListPessoa, pessoaNome);
             Console.ReadKey();
-            start();
             return;
         }
 
+        public static void addPessoa(Pessoa pessoa, RepositorioPessoa repo, List<Pessoa> ListPessoa)
+        {
+            pessoa = new Pessoa();
+            Console.WriteLine("Digite o nome da pessoa que deseja adicionar");
+            pessoa.Nome = Console.ReadLine();
+            Console.WriteLine("Digite o sobrenome da pessoa que deseja adicionar");
+            pessoa.Sobrenome = Console.ReadLine();
+            Console.WriteLine("Digite a data do aniversário no formato dd/MM/yyyy");
+            pessoa.Data = Console.ReadLine();
+            ListPessoa.Add(pessoa);
+            Console.ReadKey();
+        }
+
+        public static void action(Pessoa pessoa, RepositorioPessoa repo, List<Pessoa> ListPessoa)
+        {
+            start();
+
+            var choice = Console.ReadLine();
+
+            if (choice == "1")
+            {
+                pesquisarPessoa(repo, ListPessoa);
+            }
+            else if (choice == "2")
+            {
+                addPessoa(pessoa, repo, ListPessoa);
+            }
+            else if(choice == "3")
+            {
+                return;
+            }
+
+            action(pessoa, repo, ListPessoa);
+        }
     }
 }
