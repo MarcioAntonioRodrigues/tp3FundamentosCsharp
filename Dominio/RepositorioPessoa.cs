@@ -2,27 +2,33 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace tp3_fundamentos
+namespace Dominio
 {
-    class RepositorioPessoa
+    public class RepositorioPessoa
     {
-        public List<Pessoa> PessoasList { get; set; }
+        private static List<Pessoa> PessoasList { get; set; }
 
         public void getPessoa(List<Pessoa> PessoasList, string nome)
         {
-            if(PessoasList.Count == 0)
+            if (PessoasList.Count == 0)
             {
                 Console.WriteLine("Ninguém foi encontrado.\n");
             }
             else
             {
-                foreach(Pessoa pessoa in PessoasList)
+                List<Pessoa> CopyList = new List<Pessoa>();
+                foreach (Pessoa pessoa in PessoasList)
                 {
-                    if(pessoa.Nome == nome)
+                    if (pessoa.Nome == nome)
                     {
-                        writePessoa(pessoa);
-                        return;
+                        CopyList.Add(pessoa);
+                        //writePessoa(pessoa);
+                        //return;
                     }
+                }
+                foreach (Pessoa copy in CopyList)
+                {
+                    writePessoa(copy);
                 }
                 Console.WriteLine("Ninguém foi encontrado.\n");
             }

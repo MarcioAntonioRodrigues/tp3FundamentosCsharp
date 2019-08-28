@@ -20,3 +20,6 @@ C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\tp3_fundamentos\obj\Deb
 C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\tp3_fundamentos\obj\Debug\netcoreapp2.0\tp3_fundamentos.AssemblyInfo.cs
 C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\tp3_fundamentos\obj\Debug\netcoreapp2.0\tp3_fundamentos.dll
 C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\tp3_fundamentos\obj\Debug\netcoreapp2.0\tp3_fundamentos.pdb
+C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\tp3_fundamentos\bin\Debug\netcoreapp2.0\Dominio.dll
+C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\tp3_fundamentos\bin\Debug\netcoreapp2.0\Dominio.pdb
+C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\tp3_fundamentos\obj\Debug\netcoreapp2.0\tp3_fundamentos.csproj.CopyComplete

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dominio;
+using System;
 using System.Collections.Generic;
 
 namespace tp3_fundamentos
@@ -40,8 +41,21 @@ namespace tp3_fundamentos
             pessoa.Sobrenome = Console.ReadLine();
             Console.WriteLine("Digite a data do aniversário no formato dd/MM/yyyy");
             pessoa.Data = Console.ReadLine();
-            ListPessoa.Add(pessoa);
-            Console.ReadKey();
+            
+            Console.WriteLine("\nOs dados abaixo estão corretos?\n");
+            Console.WriteLine("Nome: " + pessoa.Nome + " " + pessoa.Sobrenome +
+                               "\nData de aniversário: " + pessoa.Data );
+            Console.WriteLine("1 - Sim \n2 - Não");
+            var option = Console.ReadLine();
+            if(option == "1")
+            {
+                ListPessoa.Add(pessoa);
+                Console.WriteLine("\nDados adicionados com sucesso!\n");
+            }
+            else
+            {
+                Console.WriteLine("\nDados não foram adicionados!\n");
+            }
         }
 
         public static void action(Pessoa pessoa, RepositorioPessoa repo, List<Pessoa> ListPessoa)
