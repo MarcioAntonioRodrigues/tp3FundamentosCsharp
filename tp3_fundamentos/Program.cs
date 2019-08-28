@@ -60,6 +60,7 @@ namespace tp3_fundamentos
 
         public static void action(Pessoa pessoa, RepositorioPessoa repo, List<Pessoa> ListPessoa)
         {
+            Console.Clear();
             start();
 
             var choice = Console.ReadLine();
