@@ -1,6 +1,7 @@
 ﻿using Dominio;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace tp3_fundamentos
 {
@@ -14,7 +15,7 @@ namespace tp3_fundamentos
 
             action(pessoa, repo, ListPessoa);
         }
-        public static void start()
+        private static void start()
         {
             Console.WriteLine("Gerenciador de aniversários " +
                           "\nSelecione uma das opções abaixo:" +
@@ -23,7 +24,7 @@ namespace tp3_fundamentos
                           "\n3 - sair");
         }
 
-        public static void pesquisarPessoa(RepositorioPessoa repo, List<Pessoa> ListPessoa)
+        private static void pesquisarPessoa(RepositorioPessoa repo, List<Pessoa> ListPessoa)
         {
             Console.WriteLine("Digite o nome, ou parte do nome da pessoa que deseja encontrar");
             string pessoaNome = Console.ReadLine();
@@ -32,7 +33,7 @@ namespace tp3_fundamentos
             return;
         }
 
-        public static void addPessoa(Pessoa pessoa, RepositorioPessoa repo, List<Pessoa> ListPessoa)
+        private static void addPessoa(Pessoa pessoa, RepositorioPessoa repo, List<Pessoa> ListPessoa)
         {
             pessoa = new Pessoa();
             Console.WriteLine("Digite o nome da pessoa que deseja adicionar");
@@ -40,7 +41,8 @@ namespace tp3_fundamentos
             Console.WriteLine("Digite o sobrenome da pessoa que deseja adicionar");
             pessoa.Sobrenome = Console.ReadLine();
             Console.WriteLine("Digite a data do aniversário no formato dd/MM/yyyy");
-            pessoa.Data = Console.ReadLine();
+            string dataNiver = Console.ReadLine();
+            pessoa.Data = DateTime.Parse(dataNiver, CultureInfo.InvariantCulture);
             
             Console.WriteLine("\nOs dados abaixo estão corretos?\n");
             Console.WriteLine("Nome: " + pessoa.Nome + " " + pessoa.Sobrenome +
@@ -58,7 +60,7 @@ namespace tp3_fundamentos
             }
         }
 
-        public static void action(Pessoa pessoa, RepositorioPessoa repo, List<Pessoa> ListPessoa)
+        private static void action(Pessoa pessoa, RepositorioPessoa repo, List<Pessoa> ListPessoa)
         {
             Console.Clear();
             start();

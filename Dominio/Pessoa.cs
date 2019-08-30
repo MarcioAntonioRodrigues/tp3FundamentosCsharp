@@ -6,6 +6,11 @@ namespace Dominio
     {
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
-        public string Data { get; set; }
+        public DateTime Data { get; set; }
+
+        public static int calculateBirthday(DateTime birthday)
+        {
+           return DateTime.Now.Subtract(birthday).Days;
+        }
     }
 }

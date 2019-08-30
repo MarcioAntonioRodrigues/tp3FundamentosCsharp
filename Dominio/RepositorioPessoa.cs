@@ -10,6 +10,8 @@ namespace Dominio
 
         public void getPessoa(List<Pessoa> PessoasList, string nome)
         {
+            bool flag = false;
+            var count = 0;
             if (PessoasList.Count == 0)
             {
                 Console.WriteLine("Ninguém foi encontrado.\n");
@@ -21,25 +23,23 @@ namespace Dominio
                 {
                     if (pessoa.Nome == nome)
                     {
+                        flag = true;
                         CopyList.Add(pessoa);
                         //writePessoa(pessoa);
                         //return;
                     }
                 }
+                Console.WriteLine("Selecione uma das opções abaixo para visualizar os dados de uma das pessoas encontradas:");
                 foreach (Pessoa copy in CopyList)
                 {
-                    writePessoa(copy);
+                    writeNameOf(copy, count);
+                    count ++;
                 }
-                Console.WriteLine("Ninguém foi encontrado.\n");
+                int nameOption = Int32.Parse(Console.ReadLine());
+                writeChosen(CopyList[nameOption]);
             }
+                if(!flag)Console.WriteLine("Ninguém foi encontrado.\n");
         }
-
-        //public void addPessoa(List<Pessoa> listPessoa, Pessoa pessoa)
-        //{
-        //    pessoa = new Pessoa();
-        //    listPessoa.Add(pessoa);
-        //    writePessoa(pessoa);
-        //}
 
         public void list(List<Pessoa> PessoasList)
         {
@@ -49,10 +49,17 @@ namespace Dominio
             }
         }
 
-        public void writePessoa(Pessoa pessoa)
+        public void writeNameOf(Pessoa pessoa, int count)
         {
-            Console.WriteLine("Nome completo: " + pessoa.Nome + " " + pessoa.Sobrenome + "" +
-                                "\nData do aniversário: " + pessoa.Data);
+            Console.WriteLine(count + " - " + pessoa.Nome);
+        }
+
+        public void writeChosen(Pessoa pessoa)
+        {
+            int birthdaytTime = Pessoa.calculateBirthday(pessoa.Data);
+            Console.WriteLine("Nome: " + pessoa.Nome + " " + pessoa.Sobrenome + "\nAniversário: " + pessoa.Data 
+                + "\nFaltam " + birthdaytTime + " dias para esse aniversário.");
+            
         }
     }
 }
