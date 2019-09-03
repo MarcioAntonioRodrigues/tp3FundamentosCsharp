@@ -42,22 +42,32 @@ namespace tp3_fundamentos
             pessoa.Sobrenome = Console.ReadLine();
             Console.WriteLine("Digite a data do aniversário no formato dd/MM/yyyy");
             string dataNiver = Console.ReadLine();
-            pessoa.Data = DateTime.Parse(dataNiver, CultureInfo.InvariantCulture);
+			try
+			{
+				pessoa.Data = DateTime.Parse(dataNiver, new CultureInfo("pt-BR"));
+				Console.WriteLine("\nOs dados abaixo estão corretos?\n");
+				Console.WriteLine("Nome: " + pessoa.Nome + " " + pessoa.Sobrenome +
+								   "\nData de aniversário: " + pessoa.Data );
+				Console.WriteLine("1 - Sim \n2 - Não");
+				var option = Console.ReadLine();
+				if(option == "1")
+				{
+					ListPessoa.Add(pessoa);
+					Console.WriteLine("\nDados adicionados com sucesso!");
+					Console.ReadLine();
+				}
+				else
+				{
+					Console.WriteLine("\nDados não foram adicionados!");
+					Console.ReadLine();
+				}
+			}
+			catch
+			{
+				Console.Write("Data inválida pressione qualquer tecla para voltar ao menu inicial.");
+				Console.ReadLine();
+			}
             
-            Console.WriteLine("\nOs dados abaixo estão corretos?\n");
-            Console.WriteLine("Nome: " + pessoa.Nome + " " + pessoa.Sobrenome +
-                               "\nData de aniversário: " + pessoa.Data );
-            Console.WriteLine("1 - Sim \n2 - Não");
-            var option = Console.ReadLine();
-            if(option == "1")
-            {
-                ListPessoa.Add(pessoa);
-                Console.WriteLine("\nDados adicionados com sucesso!\n");
-            }
-            else
-            {
-                Console.WriteLine("\nDados não foram adicionados!\n");
-            }
         }
 
         private static void action(Pessoa pessoa, RepositorioPessoa repo, List<Pessoa> ListPessoa)

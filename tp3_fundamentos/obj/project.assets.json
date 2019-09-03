@@ -680,23 +680,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\marcio.dsouza\\.nuget\\packages\\": {},
+    "C:\\Users\\marcio.souza\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marcio.dsouza\\source\\repos\\tp3FundamentosCsharp\\tp3_fundamentos\\tp3_fundamentos.csproj",
+      "projectUniqueName": "C:\\Users\\marcio.souza\\Desktop\\tp3FundamentosCsharp\\tp3_fundamentos\\tp3_fundamentos.csproj",
       "projectName": "tp3_fundamentos",
-      "projectPath": "C:\\Users\\marcio.dsouza\\source\\repos\\tp3FundamentosCsharp\\tp3_fundamentos\\tp3_fundamentos.csproj",
-      "packagesPath": "C:\\Users\\marcio.dsouza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marcio.dsouza\\source\\repos\\tp3FundamentosCsharp\\tp3_fundamentos\\obj\\",
+      "projectPath": "C:\\Users\\marcio.souza\\Desktop\\tp3FundamentosCsharp\\tp3_fundamentos\\tp3_fundamentos.csproj",
+      "packagesPath": "C:\\Users\\marcio.souza\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\marcio.souza\\Desktop\\tp3FundamentosCsharp\\tp3_fundamentos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\marcio.dsouza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\marcio.souza\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -709,8 +709,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\marcio.dsouza\\source\\repos\\tp3FundamentosCsharp\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\marcio.dsouza\\source\\repos\\tp3FundamentosCsharp\\Dominio\\Dominio.csproj"
+            "C:\\Users\\marcio.souza\\Desktop\\tp3FundamentosCsharp\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\marcio.souza\\Desktop\\tp3FundamentosCsharp\\Dominio\\Dominio.csproj"
             }
           }
         }

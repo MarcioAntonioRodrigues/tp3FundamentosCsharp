@@ -7,3 +7,12 @@ C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\Dominio\obj\Debug\netst
 C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfo.cs
 C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\Dominio\obj\Debug\netstandard2.0\Dominio.dll
 C:\Users\marcio.dsouza\source\repos\tp3FundamentosCsharp\Dominio\obj\Debug\netstandard2.0\Dominio.pdb
+C:\Users\marcio.souza\Desktop\tp3FundamentosCsharp\Dominio\obj\Debug\netstandard2.0\Dominio.dll
+C:\Users\marcio.souza\Desktop\tp3FundamentosCsharp\Dominio\obj\Debug\netstandard2.0\Dominio.pdb
+C:\Users\marcio.souza\Desktop\tp3FundamentosCsharp\Dominio\bin\Debug\netstandard2.0\Dominio.deps.json
+C:\Users\marcio.souza\Desktop\tp3FundamentosCsharp\Dominio\bin\Debug\netstandard2.0\Dominio.dll
+C:\Users\marcio.souza\Desktop\tp3FundamentosCsharp\Dominio\bin\Debug\netstandard2.0\Dominio.pdb
+C:\Users\marcio.souza\Desktop\tp3FundamentosCsharp\Dominio\obj\Debug\netstandard2.0\Dominio.csprojAssemblyReference.cache
+C:\Users\marcio.souza\Desktop\tp3FundamentosCsharp\Dominio\obj\Debug\netstandard2.0\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\marcio.souza\Desktop\tp3FundamentosCsharp\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfoInputs.cache
+C:\Users\marcio.souza\Desktop\tp3FundamentosCsharp\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfo.cs

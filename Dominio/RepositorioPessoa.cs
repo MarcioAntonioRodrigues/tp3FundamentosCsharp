@@ -21,12 +21,10 @@ namespace Dominio
                 List<Pessoa> CopyList = new List<Pessoa>();
                 foreach (Pessoa pessoa in PessoasList)
                 {
-                    if (pessoa.Nome == nome)
+                    if (pessoa.Nome.ToLower().Contains(nome.ToLower()))
                     {
                         flag = true;
                         CopyList.Add(pessoa);
-                        //writePessoa(pessoa);
-                        //return;
                     }
                 }
                 Console.WriteLine("Selecione uma das opções abaixo para visualizar os dados de uma das pessoas encontradas:");
@@ -36,7 +34,14 @@ namespace Dominio
                     count ++;
                 }
                 int nameOption = Int32.Parse(Console.ReadLine());
-                writeChosen(CopyList[nameOption]);
+				if(CopyList.Count - 1 == nameOption)
+				{
+					writeChosen(CopyList[nameOption]);
+				}
+				else
+				{
+					Console.Write("Opção escolhida é inválida");
+				}
             }
                 if(!flag)Console.WriteLine("Ninguém foi encontrado.\n");
         }
@@ -51,7 +56,7 @@ namespace Dominio
 
         public void writeNameOf(Pessoa pessoa, int count)
         {
-            Console.WriteLine(count + " - " + pessoa.Nome);
+            Console.WriteLine(count + " - " + pessoa.Nome + " " + pessoa.Sobrenome);
         }
 
         public void writeChosen(Pessoa pessoa)
