@@ -53,18 +53,18 @@ namespace tp3_fundamentos
 				if(option == "1")
 				{
 					ListPessoa.Add(pessoa);
-					Console.WriteLine("\nDados adicionados com sucesso!");
+					Console.WriteLine("Dados adicionados com sucesso!");
 					Console.ReadLine();
 				}
 				else
 				{
-					Console.WriteLine("\nDados não foram adicionados!");
+					Console.WriteLine("Dados não foram adicionados!");
 					Console.ReadLine();
 				}
 			}
 			catch
 			{
-				Console.Write("Data inválida pressione qualquer tecla para voltar ao menu inicial.");
+				Console.Write("Data inválida pressione Enter para voltar ao menu inicial.");
 				Console.ReadLine();
 			}
             

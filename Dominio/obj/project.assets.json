@@ -177,23 +177,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\marcio.souza\\.nuget\\packages\\": {},
+    "C:\\Users\\marcio.dsouza\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marcio.souza\\Desktop\\tp3FundamentosCsharp\\Dominio\\Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\marcio.dsouza\\source\\repos\\tp3FundamentosCsharp\\Dominio\\Dominio.csproj",
       "projectName": "Dominio",
-      "projectPath": "C:\\Users\\marcio.souza\\Desktop\\tp3FundamentosCsharp\\Dominio\\Dominio.csproj",
-      "packagesPath": "C:\\Users\\marcio.souza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marcio.souza\\Desktop\\tp3FundamentosCsharp\\Dominio\\obj\\",
+      "projectPath": "C:\\Users\\marcio.dsouza\\source\\repos\\tp3FundamentosCsharp\\Dominio\\Dominio.csproj",
+      "packagesPath": "C:\\Users\\marcio.dsouza\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\marcio.dsouza\\source\\repos\\tp3FundamentosCsharp\\Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\marcio.souza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\marcio.dsouza\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
